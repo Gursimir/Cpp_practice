@@ -8,6 +8,11 @@ using namespace std;
 
 int main() {
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    # ifndef ONLINE_JUDGE
+         freopen("input.txt","r",stdin);
+         freopen("output.txt","w",stdout);
+      #endif
+      
     int N;
     cin>>N;
 
