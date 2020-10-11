@@ -67,6 +67,11 @@ ostream &operator<<(ostream &out, Box &B) {
 
 void check2()
 {
+     # ifndef ONLINE_JUDGE
+         freopen("inputb.txt","r",stdin);
+         freopen("outputb.txt","w",stdout);
+      #endif
+
 	int n;
 	cin>>n;
 	Box temp;
@@ -115,9 +120,10 @@ void check2()
 
 int main()
 {
-	check2();
      # ifndef ONLINE_JUDGE
          freopen("inputb.txt","r",stdin);
          freopen("outputb.txt","w",stdout);
       #endif
+
+	check2();
 }
