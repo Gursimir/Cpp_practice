@@ -24,7 +24,7 @@ class RectangleArea : public Rectangle{
     }
 };
 
-int main()
+ main()
 {
     
     RectangleArea r_area;
@@ -35,5 +35,4 @@ int main()
     
     r_area.display();
     
-    return 0;
 }
