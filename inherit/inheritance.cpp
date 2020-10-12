@@ -5,17 +5,16 @@
 using namespace std;
 
 /* Define the exception here */
-class BadLengthException : public exception{
+class BadLengthException{
     public:
+	    int n;
        BadLengthException(int x){
-           if(x < 5){
-               cout<<"To short: "<<x<<endl;
-           }
+           n=x;
        }
 
-       const char* work() const throw(){
-           return ;
-       }
+      int what(){
+		  return n;
+	  }
 };
 
 
@@ -34,7 +33,7 @@ bool checkUsername(string username) {
 }
 
 int main() {
-     # ifndef ONLINE_JUDGE
+     #ifndef ONLINE_JUDGE
          freopen("inputI.txt","r",stdin);
          freopen("outputI.txt","w",stdout);
       #endif
