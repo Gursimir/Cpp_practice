@@ -32,7 +32,7 @@ bool checkUsername(string username) {
 	return isValid;
 }
 
-int main() {
+void main() {
      #ifndef ONLINE_JUDGE
          freopen("inputI.txt","r",stdin);
          freopen("outputI.txt","w",stdout);
@@ -55,5 +55,4 @@ int main() {
 			cout << "Too short: "<< e.what() << '\n';
 		}
 	}
-	return 0;
 }
