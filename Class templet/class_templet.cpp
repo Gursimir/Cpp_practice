@@ -7,7 +7,29 @@
 using namespace std;
 
 /*Write the class AddElements here*/
+template <class T>
+class AddElements{
+    T element1;
+    public:
+    AddElements(T a){
+        element1 = a;
+    }
+    T add(T element2){
+        return element1+element2;
+    }
+};
 
+template <>
+class AddElements<string>{
+    string element1;
+    public:
+      AddElements(string a){
+          element1 = a;
+      }
+      string concatenate(string element2){
+          return element1+element2;
+      }
+};
 int main () {
     #ifndef ONLINE_JUDGE
         freopen("input.txt","r",stdin);
